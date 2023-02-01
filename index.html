@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curriculum Vitae</title>
+        <link rel="stylesheet" href="estilos/normalize.css"/>
+        <link rel="stylesheet" href="estilos/style.css"/>
+    </head>
+    <body>
+
+        <div id="caja_blanca">
+            <h1 id="titulo">Curriculum Vitae</h1>
+            <h1 id="titulo_alternativo">CV</h1>
+            <h2 class="nombre"> Carlos Raiteri.<span>&#160;</span>
+        </div>
+
+        <div id="caja_negra">
+            <div>
+                <input type="button" value="¡Conóceme!" id="boton" onclick="desplegarMenu();">
+            </div>
+        </div>
+
+        <div id="cuadrado_foto">
+            <img id="foto" src="imagenes/foto_curriculum.jpg" alt="Foto de Currículum"/>
+        </div>
+
+        <div class="caja_menu" id="menu_desplegable">
+            <div class="contenido_menu">
+                <nav class="lista_items">
+                    <a class="item_alt" id="carta_alt" onclick="mostrarCartaResponsiva();">Carta de Presentación</a>
+                    <a class="item_alt" id="datos_alt" onclick="mostrarDatosPersonales();">Datos Personales</a>
+                    <a class="item_alt" id="objetivo_alt" onclick="mostrarObjetivo();">Objetivo</a>
+                    <a class="item_alt" id="formacion_alternativa" onclick="mostrarFormacionAlt();">Formacion</a>
+                    <a class="item_alt" id="experiencia_alternativa" onclick="mostrarExperienciaAlt();">Experiencia laboral</a>
+                    <a class="item_alt" id="portafolio_alt" onclick="mostrarPortafolio();">Portafolio de trabajos</a>
+                    <a class="item_alt" id="contacto_alt" onclick="mostrarContacto();">Contacto</a>
+                    <a class="item" id="carta" onclick="mostrarCarta1();">Carta de Presentación</a>
+                    <a class="item" id="datos_personales" onclick="mostrarDatosPersonales();">Datos Personales</a>
+                    <a class="item" id="objetivo" onclick="mostrarObjetivo();">Objetivo</a>
+                    <a class="item" id="formacion" onclick="mostrarFormacion1();">Formación</a>
+                    <a class="item" id="experiencia" onclick="mostrarExperiencia1();">Experiencia Laboral</a>
+                    <a class="item" id="portafolio" onclick="mostrarPortafolio();">Portafolio de trabajos</a>
+                    <a class="item" id="contacto" onclick="mostrarContacto();">Contacto</a>
+                </nav>
+
+                <input type="button" value="x" id="equis" onclick="guardarMenu();">
+            </div>
+        </div>
+
+        <div class="contenedor" id="contenedor">
+            <div id="cajas_de_texto">
+
+                <div id="carta_responsiva">
+                    <p>
+                        De mi total consideración:
+                    </p>
+                    <p>
+                        Mi nombre es Carlos Vicente Raiteri, actualmente Gerente de Área
+                        en la firma Dinosaurio S.A.
+                    </p>
+                    <p>
+                        Mis más de 10 años de experiencia me han permitido desarrollar 
+                        habilidades mediante las cuales he podido desempeñarme exitosamente 
+                        en puestos de responsabilidad.
+                    </p>
+                    <p>
+                        Sin embargo en la actualidad me encuentro en la disyuntiva de poder 
+                        asumir nuevos retos, orientados sobre todo al área IT, en donde vengo
+                        perfeccionándome hace más de un año a través de intensas formaciones
+                        a cargo de las más prestigiosas instituciones educativas del rubro.
+                    </p>
+                    <p>
+                        Sinceramente creo que formar parte de su empresa sería una gran
+                        oportunidad para mí, ya que soy una persona muy comprometida con mi
+                        trabajo y con mucho interés en mantenerme al día de las novedades.
+                        Por eso estoy convencido de que trabajando con ustedes, podría crecer
+                        profesionalmente y contribuir al logro de los objetivos del 
+                        departamento que me sea asignado.
+                    </p>
+                    <p>
+                        Me gustaría concertar con ustedes una reunión para que puedan valorar
+                        mi candidatura. Quedo pues, a la espera de recibir noticias suyas para 
+                        concertar una cita.
+                    </p>
+                    <p>
+                        Desde ya muchas gracias.
+                    </p>
+                    <p>
+                        Atentamente:
+                    </p>
+                    <p>
+                        Carlos Vicente Raiteri.
+                    </p>
+                </div>
+
+                
+                
+                <div id="caja_de_texto--carta1" class="texto">
+
+                    <p>
+                        De mi total consideración:
+                    </p>
+                    <p>
+                        Mi nombre es Carlos Vicente Raiteri, actualmente Gerente de Área
+                        en la firma Dinosaurio S.A.
+                    </p>
+                    <p>
+                        Mis más de 10 años de experiencia me han permitido desarrollar 
+                        habilidades mediante las cuales he podido desempeñarme exitosamente 
+                        en puestos de responsabilidad.
+                    </p>
+                    <p>
+                        Sin embargo en la actualidad me encuentro en la disyuntiva de poder 
+                        asumir nuevos retos, orientados sobre todo al área IT, en donde vengo
+                        perfeccionándome hace más de un año a través de intensas formaciones
+                        a cargo de las más prestigiosas instituciones educativas del rubro.
+                    </p>
+
+                    <input class="btn_cambio_pagina" type="button" id="boton_pagina1-carta" value="Página 1 de 2 >>" onclick="mostrarCarta2();">
+                </div>
+
+                <div id="caja_de_texto--carta2" class="texto">
+                    <p>
+                        Sinceramente creo que formar parte de su empresa sería una gran
+                        oportunidad para mí, ya que soy una persona muy comprometida con mi
+                        trabajo y con mucho interés en mantenerme al día de las novedades.
+                        Por eso estoy convencido de que trabajando con ustedes, podría crecer
+                        profesionalmente y contribuir al logro de los objetivos del 
+                        departamento que me sea asignado.
+                    </p>
+                    <p>
+                        Me gustaría concertar con ustedes una reunión para que puedan valorar
+                        mi candidatura. Quedo pues, a la espera de recibir noticias suyas para 
+                        concertar una cita.
+                    </p>
+                    <p>
+                        Desde ya muchas gracias.
+                    </p>
+                    <p>
+                        Atentamente:
+                    </p>
+                    <p>
+                        Carlos Vicente Raiteri.
+                    </p>
+
+                    <input type="button" class="btn_cambio_pagina" id="boton_pagina2-carta" value="<< Página 2 de 2" onclick="mostrarCarta1();">
+                </div>
+
+                <div id="caja_de_texto--datos--personales" class="texto">
+                    <ul id="lista_datos">
+                        <li>Nombre Completo: Carlos Vicente Raiteri</li>
+                        <li>Domicilio: Saúl Moyano 326 La Calera - Córdoba</li>
+                        <li>Edad: 34 años</li>
+                        <li>Nacionalidad: Argentino</li>
+                        <li>Mobilidad Propia: Sí</li>
+                        <li>Carnet de conducir: Sí</li>
+                        <li>Disponibilidad horaria: Full-time</li>
+                    </ul>
+                </div>
+
+                <div id="caja_de_texto--objetivo" class="texto">
+                    <p>
+                        "Conseguir un puesto de trabajo que me permita aplicar mis 
+                        experiencias y conocimientos para continuar mi desarrollo
+                        profesional y realizar de la mejor manera las funciones asignadas."
+                    </p>
+                </div>
+
+                <div id="formacion_alt">
+                    <ul id="lista_formación_alt">
+                        <li>Cursos en Alura Latam (Beca Oracle Next Education): 
+                             "Hábitos de Liderazgo", "Bussiness Model Canvas 1 y 2", "CSS 
+                             Grid", "CSS Flexbox", "Arquitectura CSS", "Nociones básicas 
+                             de Git y GitHub", "Introducción al Desarrollo Web con HTML5 
+                             y CSS3 1, 2, 3 y 4", "Introducción a JavaScript 1 y 2", 
+                             "Fundamentos de Lógica de Programación 1, 2 y 3", "Implementación de 
+                             sistemas AGILE en entornos laborales 1,2, 3 y 4", "Ciclo de 
+                             Vida del producto", "Foco", "Emprendimiento", "Hábitos de 
+                             Productividad 1 y 2", "Lean Startup", "Linkedin", "Pitch para 
+                             Entrevistas".
+                        </li>
+                        <li>Cursos en Open Bootcamp: "Introducción a la programación"
+                                    "Conceptos de la programación".
+                        </li>
+                        <li>Curso Argentina Programa: "Sé Programar".</li>
+                        <li>Cursos en Grasshopper: "Introducción a la programación con JavaScript
+                                    1 y 2".
+                        </li>
+                        <li>Cursos en Aulafácil S.I. : "Liderazgo", "Trabajo en Equipo",
+                            "Intruducción al marketing", "Cómo crear campañas de Email Marketing".
+                        </li>
+                        <li>Cursos en Academia Jhon Maxwell Team: "Mentalidad: cómo ser un éxito REAL", 
+                            "Liderazgo: Seamos personas de influencia".
+                        </li>
+                        <li>Cursos en Axon Training: "Coaching Ontológico", "Oratoria Moderna"</li>
+                        <li>Cursos en Academia Mauricio Benoist: "Ventas en el mundo Digital", 
+                            "Programación Neurolingüística", "Coaching expansivo", "Coach con PNL", 
+                            "Oratoria Moderna", "Ventas con PNL".
+                        </li>
+                        <li>Curso en Google Actívate: "Productividad Personal".</li>
+                        <li>Curso en Universidad De Morón: "Gestoría General"</li>
+                        <li>Estudios Secundarios Completos en Instituto Domingo
+                            Faustino Sarmiento, La Calera - Córdoba.
+                        </li>
+                    </ul>
+                </div>
+                
+                <div id="caja_de_texto--formacion1" class="texto">
+                    <ul id="lista_formación1">
+                        <li>Cursos en Alura Latam (Beca Oracle Next Education): 
+                             "Hábitos de Liderazgo", "Bussiness Model Canvas 1 y 2", "CSS 
+                             Grid", "CSS Flexbox", "Arquitectura CSS", "Nociones básicas 
+                             de Git y GitHub", "Introducción al Desarrollo Web con HTML5 
+                             y CSS3 1, 2, 3 y 4", "Introducción a JavaScript 1 y 2", 
+                             "Fundamentos de Lógica de Programación 1, 2 y 3", "Implementación de 
+                             sistemas AGILE en entornos laborales 1,2, 3 y 4", "Ciclo de 
+                             Vida del producto", "Foco", "Emprendimiento", "Hábitos de 
+                             Productividad 1 y 2", "Lean Startup", "Linkedin", "Pitch para 
+                             Entrevistas".
+                        </li>
+                        <li>Cursos en Open Bootcamp: "Introducción a la programación"
+                                    "Conceptos de la programación".
+                        </li>
+                        <li>Curso Argentina Programa: "Sé Programar".</li>
+                        <li>Cursos en Grasshopper: "Introducción a la programación con JavaScript
+                                    1 y 2".
+                        </li>
+                    </ul>
+                    
+                    <div id="boton_formacion1">
+                        <input id="boton_formacion1" class="btn_cambio_pagina" type="button" value="Página 1 de 2 >>" onclick="mostrarFormacion2();">
+                    </div>
+                </div>
+                
+                <div id="caja_de_texto--formacion2" class="texto">
+                    <ul id="lista_formación2">
+                        <li>Cursos en Aulafácil S.I. : "Liderazgo", "Trabajo en Equipo",
+                                    "Intruducción al marketing", "Cómo crear campañas de Email Marketing".
+                        </li>
+                        <li>Cursos en Academia Jhon Maxwell Team: "Mentalidad: cómo ser un éxito REAL", 
+                                    "Liderazgo: Seamos personas de influencia".
+                        </li>
+                        <li>Cursos en Axon Training: "Coaching Ontológico", "Oratoria Moderna"</li>
+                        <li>Cursos en Academia Mauricio Benoist: "Ventas en el mundo Digital", 
+                                    "Programación Neurolingüística", "Coaching expansivo", "Coach con PNL", 
+                                    "Oratoria Moderna", "Ventas con PNL".
+                        </li>
+                        <li>Curso en Google Actívate: "Productividad Personal".</li>
+                        <li>Curso en Universidad De Morón: "Gestoría General"</li>
+                        <li>Estudios Secundarios Completos en Instituto Domingo
+                                    Faustino Sarmiento, La Calera - Córdoba.
+                        </li>
+                    </ul>
+
+                    <input id="boton_formacion2" class="btn_cambio_pagina" type="button" value="<< Página 2 de 2" onclick="mostrarFormacion1();">
+
+                </div>
+
+                <div>
+
+                    <div id="experiencia_alt">
+                        <ul id="lista_experiencia_alt">
+                            <li>Grupo Dinosaurio. Desde 03/2022 hasta la actualidad.<br>
+                                Posición: Gerente de área, 17 personas a cargo.<br>
+                                Tareas: Control y supervisión de personal, realización de pedidos, 
+                                seguimiento de objetivos, generación de estrategias de crecimiento
+                                para el sector, implementación y cumplimiento de protocolos para
+                                cada tarea, coordinación y trabajo en equipo con pares de otras 
+                                áreas, manejo de autoelevaroes eléctricos y gasoleros.<br>
+                                Referencias: Marcelo Juarez (Jefe de Mall) - 3516791435.
+                            </li>
+                            <li>Supermercados "A Granel". Desde 11/2012 hasta 03/2022.<br>
+                                Posición: Gerente de sucursal, 45 personas a cargo.<br>
+                                Tareas: Control y supervisión de personal, confección de pedidos, 
+                                seguimiento de objetivos, manejo de todas las áreas de un supermercado, 
+                                recepción de mercadería, logística de depósito, implementación y 
+                                cumplimiento de protocolos para cada tarea, auditoría y control de stocks.<br>
+                                Referencias: Adriana Paolucci (Presidente de la Empresa) - 3512379355.</li>
+                            <li>Mayorista Polirrubro "El Encanto". Desde 11/2019 hasta 11/2012.<br>
+                                Posición: Vendedor/Operario de depósito.<br>
+                                Tareas: Ventas, atención personalizada de clientes, reposición, codificación 
+                                de productos, limpieza, gestión de devoluciones, trabajo de depósito, carga y 
+                                descarga de mercadería, reparto.<br>
+                                Referencias: Romina Kaplan (Presidente de la Empresa) - 3514217100.</li>
+                            <li>Despensa "Margarita Shop". Desde 02/2007 hasta 11/2009.<br>
+                                Posición: Encargado de local.<br>
+                                Tareas: Ventas, atención de clientes por mostrador, reposición de productos, 
+                                manejo de caja, pago a proveedores, apertura y cierre del local, 
+                                limpieza, capacitación de personal.<br>
+                                Referencias: Miguel Argüello (Presidente de la Empresa) - 3515945594.</li>
+                        </ul>
+                    </div>
+
+                    <div id="caja_de_texto--experiencia1" class="texto">
+                        <ul id="lista_experiencia1">
+                            <li>Grupo Dinosaurio. Desde 03/2022 hasta la actualidad.<br>
+                                Posición: Gerente de área, 17 personas a cargo.<br>
+                                Tareas: Control y supervisión de personal, realización de pedidos, 
+                                seguimiento de objetivos, generación de estrategias de crecimiento
+                                para el sector, implementación y cumplimiento de protocolos para
+                                cada tarea, coordinación y trabajo en equipo con pares de otras 
+                                áreas, manejo de autoelevaroes eléctricos y gasoleros.<br>
+                                Referencias: Marcelo Juarez (Jefe de Mall) - 3516791435.
+                            </li>
+                            <li>Supermercados "A Granel". Desde 11/2012 hasta 03/2022.<br>
+                                Posición: Gerente de sucursal, 45 personas a cargo.<br>
+                                Tareas: Control y supervisión de personal, confección de pedidos, 
+                                seguimiento de objetivos, manejo de todas las áreas de un supermercado, 
+                                recepción de mercadería, logística de depósito, implementación y 
+                                cumplimiento de protocolos para cada tarea, auditoría y control de stocks.<br>
+                                Referencias: Adriana Paolucci (Presidente de la Empresa) - 3512379355.</li>
+                        </ul>
+
+                        <input id="boton_experiencia1" class="btn_cambio_pagina" type="button" value="Página 1 de 2 >>" onclick="mostrarExperiencia2();">
+
+                    </div>
+
+                    <div id="caja_de_texto--experiencia2" class="texto">
+                        <ul id="lista_experiencia2">
+                            <li>Mayorista Polirrubro "El Encanto". Desde 11/2019 hasta 11/2012.<br>
+                                Posición: Vendedor/Operario de depósito.<br>
+                                Tareas: Ventas, atención personalizada de clientes, reposición, codificación 
+                                de productos, limpieza, gestión de devoluciones, trabajo de depósito, carga y 
+                                descarga de mercadería, reparto.<br>
+                                Referencias: Romina Kaplan (Presidente de la Empresa) - 3514217100.</li>
+                            <li>Despensa "Margarita Shop". Desde 02/2007 hasta 11/2009.<br>
+                                Posición: Encargado de local.<br>
+                                Tareas: Ventas, atención de clientes por mostrador, reposición de productos, 
+                                manejo de caja, pago a proveedores, apertura y cierre del local, 
+                                limpieza, capacitación de personal.<br>
+                                Referencias: Miguel Argüello (Presidente de la Empresa) - 3515945594.</li>
+                        </ul>
+
+                        <input id="boton_experiencia2" class="btn_cambio_pagina" type="button" value="<< Página 2 de 2" onclick="mostrarExperiencia1();">
+
+                    </div>
+                </div>
+
+                <div id="caja_de_texto--portafolio" class="texto">
+                    <ul id="lista_trabajos">
+                        <li>
+                            Encriptador y desencriptador de texto.<br> 
+                            <a class="portafolio_trabajo" href="https://carlosraiteri.github.io/encriptadordetexto.github.io/">Enlace</a>
+                        </li>
+                        <li>
+                            Fruta o Fruto. Prototipo de sitio web de recetas saludables.<br>
+                            <a class="portafolio_trabajo" href="https://carlosraiteri.github.io/fruta-fruto.github.io/">Enlace</a></li>
+                        <li>
+                            Tienda de Apps. Prototipo de tienda de aplicaciones.<br>
+                            <a class="portafolio_trabajo" href="https://carlosraiteri.github.io/tiendadeapps.github.io/">Enlace</a>
+                        </li>
+                        <li>
+                            Clínica Buona Vita. Prototipo de aplicación para gestión de datos de clientes
+                            en una clínica.<br> 
+                            <a class="portafolio_trabajo" href="https://carlosraiteri.github.io/clinicabuonavita.github.io/">Enlace</a>
+                        </li>
+                        <li>Barbería Alura. Prototipo de sitio web de tres páginas para una barbería.<br>
+                            <a class="portafolio_trabajo" href="https://carlosraiteri.github.io/barberiaalura.github.io/">Enlace</a></li>
+                    </ul>
+                </div>
+                
+                <div id="caja_de_texto--contacto" class="texto">
+                    <ul id="lista_contacto">
+                        <li id="item_cel"> 
+                            <img id="icono_telefono" src="iconos/llamada-telefonica.png" alt="icono_telefono">
+                                Teléfono: +54 9 3517547680
+                        </li>
+                        <li >
+                            <img id="icono_email" src="iconos/email.png" alt="icono_email">
+                              Email: carlosvraiteri@gmail.com
+                        </li>
+                        <li >
+                            <img id="icono_linkedin" src="iconos/logotipo-de-linkedin.png" alt="icono_linkedin">
+                              LinkedIn: 
+                            <a class="linkedin" href="https://carlosraiteri.github.io/tiendadeapps.github.io/">Enlace a perfil</a>
+                        </li>
+                        <li >
+                            <img id="icono_github" src="iconos/github.png" alt="icono_github">
+                              GitHub: 
+                            <a class="github" href="https://carlosraiteri.github.io/clinicabuonavita.github.io/">Enlace a repositorio</a>
+                        </li>
+                </div>
+
+            </div>
+            <input type="button" id="volver" value="Volver" onclick="ocultarContenedorTexto();">
+        </div>
+
+        <script src="javascript/script.js"></script>
+    </body>
+        
+    <footer>
+        <p id="footer">&copy Copyright Carlos Raiteri - 2023</p>
+    </footer>
+</html>
